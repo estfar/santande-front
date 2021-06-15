@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div>
     <h1> Mi primera etiqueta </h1>
     <h2>Etiqueta 2</h2>
     <h3>Etiqueta 3</h3>
@@ -31,20 +32,25 @@
 
         <!--required se pone casi al final-->
 
-        <h4>Apellido</h4>
-        <input type="text" placeholder="Apellido"><br>
-        <h4>Edad</h4>
-        <input type="number" name="" id="" placeholder="12" min="18" max="30">
-        <h4>Contraseña</h4>
-        <input type="password" placeholder="*******">
-        <h4>Email</h4>
-        <input type="email" placeholder="algo@algo.com">
-        <button type="submit">Enviar &rarr;</button>
+        <!-- <h4>Apellido</h4> -->
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" placeholder="Apellido"><br>
+        <!-- <h4>Edad</h4> -->
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="" placeholder="12" min="18" max="30"><br>
+        <!-- <h4>Contraseña</h4> -->
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" placeholder="*******"><br>
+        <!-- <h4>Email</h4> -->
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="algo@algo.com"><br>
+        <button type="submit">Enviar &rarr;</button><br>
 
         <!--El tipo submit se encarga de ejecutar el action del form-->
     </form>
     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="imagen">
     <!--solo tomara el espacio que necesite -->
+    </div>
 </body>
 
 </html>
