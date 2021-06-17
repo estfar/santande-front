@@ -33,6 +33,10 @@ body{
   li{
       display: inline;
   }
+  ul>*{
+    margin: 0 25px 0 25px;
+
+  }
 
   .header > *{
       display:inline-block;
@@ -40,7 +44,10 @@ body{
       font-size: 16px;
       vertical-align: middle;
       height: 100%;
-      line-height: 45px;;
+      line-height: 45px;
+      color:#025157;
+      font-family: sans-serif;
+
   }
 
   .logo{
@@ -51,8 +58,22 @@ body{
       text-align: left;
       color: green;
   }
-  .action{
+
+  .actions{
       width:15%;
-      text-align: 14px;
+      font-size: 14px;
       text-align: left;
   }
+
+  .actions>*{
+    margin: 0 10px 0 10px;
+  }
+  .singin{
+      color:#67b54b;
+  }
+  .btn{
+      background-repeat:#67b54b;
+      padding: 12px 14px 12px 14px;
+      border: none;
+      border-radius: 5px;  
+    }
