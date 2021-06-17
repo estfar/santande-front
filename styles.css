@@ -18,15 +18,15 @@ button{
 
 body{
     background-color: #fffbf793;
-    background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80'); */
 }
 
-div{
+/**div{
     width: 500px;
     background-color: rgba(255, 245, 238, 0.616);
     margin: auto;
     border-radius: 10px;
-}
+}**/
 form{
     margin-left: 50px;
 }
@@ -35,3 +35,8 @@ img{
     display: block;
     margin: auto;
 }
+.header {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
