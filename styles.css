@@ -18,25 +18,41 @@ button{
 
 body{
     background-color: #fffbf793;
-    /* background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80'); */
 }
 
-/**div{
-    width: 500px;
-    background-color: rgba(255, 245, 238, 0.616);
-    margin: auto;
-    border-radius: 10px;
-}**/
-form{
-    margin-left: 50px;
-}
-img{
-    width: 200px;
-    display: block;
-    margin: auto;
-}
 .header {
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 40px 20px 0 20px;
+    /* margin-top: 40px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    height: 100%;
+    font-size: 0;
+    line-height: 45px;;
+  }
+
+  li{
+      display: inline;
+  }
+
+  .header > *{
+      display:inline-block;
+      /* Todos los hijos de clase header se les va a aplicar este diseño */
+      font-size: 16px;
+      vertical-align: middle;
+      height: 100%;
+      line-height: 45px;;
+  }
+
+  .logo{
+      width: 15%;
+  }
+  .navbar{
+      width:70%;
+      text-align: left;
+      color: green;
+  }
+  .action{
+      width:15%;
+      text-align: 14px;
+      text-align: left;
   }
