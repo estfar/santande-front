@@ -98,4 +98,17 @@ body{
         width: 70%;
         margin: 100px auto;
         align-items: center;
+        gap: 10px;
+    }
+    .fixed-header{
+        position:fixed;
+        background-color: #f7f5f3;
+        top:0;
+        left:0;
+        right:0;
+        
+    }
+    body{
+        margin-top: 200px;
+        text-align: center;
     }
