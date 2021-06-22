@@ -77,3 +77,16 @@ body{
       border: none;
       border-radius: 5px;  
     }
+    .email > h1{
+        color:#025157;
+    }
+    .email > p{
+        color:#343434;
+    }
+    
+    .btn-email{
+        border-radius: 0 20px 20px 0;
+        border: none;
+        appearance: none;
+        height: 30px;
+    }
