@@ -77,11 +77,14 @@ body{
       border: none;
       border-radius: 5px;  
     }
-    .email > h1{
+    .publish > h1{
         color:#025157;
     }
-    .email > p{
+    .publish > p{
         color:#343434;
+    }
+    .publish > form {
+        display: flex;
     }
     
     .btn-email{
@@ -89,4 +92,10 @@ body{
         border: none;
         appearance: none;
         height: 30px;
+    }
+    .promo{
+        display: flex;
+        width: 70%;
+        margin: 100px auto;
+        align-items: center;
     }
