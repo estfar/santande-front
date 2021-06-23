@@ -106,9 +106,60 @@ body{
         top:0;
         left:0;
         right:0;
+        z-index: 1;
         
     }
     body{
         margin-top: 200px;
         text-align: center;
+    }
+    /*Postwork*/
+
+    .brands{
+        display: flex;
+        background-color: #a1d683;
+    }
+
+    .face{
+        height:250px;
+        border-radius:20px 20px 0 0; 
+    }
+    .brands > *{
+        margin: 80px 100px 0 50px;
+    }
+    .section-2{
+        background-color: #f7f5f3;
+        border-radius:20px;
+        position: relative;
+    }
+    .info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .info>*{
+        text-align: left;
+    }
+    .text>*{
+        text-align: left;
+        align-items: left;
+    }
+    .text{
+        margin: 200px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .logos{
+        display: flex;
+    }
+    .logos>*{
+        width: 50%;
+    }
+    .log{
+        position: absolute;
+        right: 20px;
+        top: 200px;
+        width:80px;
     }
