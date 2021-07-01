@@ -1,0 +1,30 @@
+.container{
+    display:flex;
+    width: 400px;
+    height: 400px;
+    background-color: darkorange;
+    /*flex-direction: column-reverse;*/
+    /* flex-wrap:wrap; */
+    /* flex-wrap:nowrap; */
+}
+
+.container > .item{
+    /*hijos directos de la clase principal*/
+    background-color: rgb(168, 130, 238);
+    width: 30%;
+    height: 30px;
+}
+.main{
+    display:flex;
+    width:500px;
+}
+
+.main div:nth-of-type(1){
+    flex-grow:1;
+}
+
+.main div:nth-of-type(4){
+    flex-grow: 1;
+}
+
+/*El flex grow funciona para dividir el restante del espacio disponible en en las partes que se indican en el*/

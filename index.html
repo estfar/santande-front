@@ -4,139 +4,251 @@
 <head>
     <!--Solo datos, información para el navegador-->
     <meta charset="UTF-8">
+    <!--Si no tiene metadatos, va a tardar más en aparecer en las búsquedas en google.-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Este es el encabezado, en esta parte le decimos al navegador algunas indicaciones de compatiblidad, también podemos agregar estilos
     también asignamos el nombre que va a aparecer en la pestaña-->
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,800;1,900&display=swap"
+        rel="stylesheet">
     <!--archivos que queremos importar-->
+    
 </head>
 
 <body>
-    <section class="fixed-header">
-        <header class="header">
-            <a href="./index.html" class="logo">
-                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="logo">
-            </a>
+    <main>
+        <section class="fixed-header">
+            <header class="header">
+                <a href="./index.html" class="logo">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="logo">
+                </a>
 
-            <nav class="navbar">
-                <ul>
-                    <li>Plataform</li>
-                    <li>Pricing</li>
-                    <li>Customers</li>
-                    <li>Resources</li>
-                    <li>About</li>
-                </ul>
+                <nav class="navbar">
+                    <ul>
+                        <li>Plataform</li>
+                        <li>Pricing</li>
+                        <li>Customers</li>
+                        <li>Resources</li>
+                        <li>About</li>
+                    </ul>
 
-            </nav>
+                </nav>
 
-            <div class="actions">
-                <a href="./login" class="singin">Sing In</a>
-                <button type="submit" class="btn">Start free trial</button>
-            </div>
-        </header>
-    </section>
-
-    <!--Todo el código de etiquetas de la página-->
-    <div>
-        <h1> Mi primera etiqueta </h1>
-        <h2>Etiqueta 2</h2>
-        <h3>Etiqueta 3</h3>
-        <h4>Etiqueta 4</h4>
-        <h5>Etiqueta 5</h5>
-        <h6>Etiqueta 6</h6>
-        <p>
-            El día de hoy he comenzado con las sesión de BEDU, son bastante entretenidas <b>texto promocional</b>
-        </p>
-
-        <form action="">
-            <!-- <p style="display: inline;">Nombre</p> -->
-            <!-- ctrl k c comments ctrl k u will uncomment -->
-
-            <label for="name">Nombre</label>
-            <input type="text" name="nombre" placeholder="Nombre" required><br>
-
-            <!--required se pone casi al final-->
-
-            <!-- <h4>Apellido</h4> -->
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" placeholder="Apellido"><br>
-            <!-- <h4>Edad</h4> -->
-            <label for="edad">Edad</label>
-            <input type="number" name="edad" id="" placeholder="12" min="18" max="30"><br>
-            <!-- <h4>Contraseña</h4> -->
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" placeholder="*******"><br>
-            <!-- <h4>Email</h4> -->
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="algo@algo.com"><br>
-            <button type="submit">Enviar &rarr;</button><br>
-
-            <!--El tipo submit se encarga de ejecutar el action del form-->
-        </form>
-        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="imagen">
-        <!--solo tomara el espacio que necesite -->
-
-        <section class="promo">
-            <article>
-                <video controls
-                    poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
-                    <source
-                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
-                        type="video/mp4">
-
-                    <source
-                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
-                        type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png"
-                    alt="see-what-happens">
-            </article>
-
-            <article class="publish">
-                <h1>Publish to your blog in minutes, not hours</h1>
-                <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t
-                    have hours to create content that may or may not work. With Matcha, instantly publish from our
-                    library of 10,000+ professionally written articles and build your email list faster with our
-                    powerful conversion tool.</p>
-                <form action="">
-                    <label for="email">Start publishing today</label><br>
-                    <input type="email" name="email" placeholder="Enter email">
-                    <button class="btn-email">Start my free trial</button>
-                </form>
-            </article>
+                <div class="actions">
+                    <a href="./login" class="singin">Sing In</a>
+                    <button type="submit" class="btn">Start free trial</button>
+                </div>
+            </header>
         </section>
-        <section class ="brands">
-            <div class="text">
-                <h1>Growing ecommerce brands rely on Matcha</h1>
-                <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact
-                    on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality
-                    content and consistent performance from their blogs.</p>
-                    <button>Who uses matcha?</button>
-                    <div class = "logos">
-                        <img src="https://amilcarkraudy.org/wp-content/uploads/2018/11/logo-airbnb-404px-grey.png" alt="">
-                        <img src="https://caringforcare.co.uk/wp-content/uploads/2014/08/grey-logo.png" alt="">
-                    </div>
-            </div>
 
-            <section class = "section-2">
-                
-                    <img class = "face" src="https://geeksroom.com/wp-content/uploads/2019/02/this-person-does-not-exist-1.jpg" alt="persona">
-                    <img class ="log" src="https://cdn.pixabay.com/photo/2016/08/23/10/17/circle-1613999_960_720.png" alt="">
+        <!--Todo el código de etiquetas de la página-->
+        <div class="etiquetas">
+            <h1 class="titulo"> Mi primera etiqueta </h1>
+            <h2>Etiqueta 2</h2>
+            <h3>Etiqueta 3</h3>
+            <h4>Etiqueta 4</h4>
+            <h5>Etiqueta 5</h5>
+            <h6>Etiqueta 6</h6>
+            <p>
+                El día de hoy he comenzado con las sesión de BEDU, son bastante entretenidas <b>texto promocional</b>
+            </p>
+            <section class="formato">
+                <form action="">
+                    <!-- <p style="display: inline;">Nombre</p> -->
+                    <!-- ctrl k c comments ctrl k u will uncomment -->
+
+                    <label for="name">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre" required><br>
+
+                    <!--required se pone casi al final-->
+
+                    <!-- <h4>Apellido</h4> -->
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Apellido"><br>
+                    <!-- <h4>Edad</h4> -->
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="" placeholder="12" min="18" max="30"><br>
+                    <!-- <h4>Contraseña</h4> -->
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" placeholder="*******"><br>
+                    <!-- <h4>Email</h4> -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="algo@algo.com"><br>
+                    <button type="submit">Enviar &rarr;</button><br>
+
+                    <!--El tipo submit se encarga de ejecutar el action del form-->
+                </form>
+            </section>
+
+
+            <img class=".banner" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="imagen">
+            <!--solo tomara el espacio que necesite -->
+
+            <section class="promo">
+                <article>
+                    <video controls
+                        poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+                        <source
+                            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
+                            type="video/mp4">
+
+                        <source
+                            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
+                            type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png"
+                        alt="see-what-happens">
+                </article>
+
+                <article class="publish">
+                    <h1>Publish to your blog in minutes, not hours</h1>
+                    <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you
+                        don’t
+                        have hours to create content that may or may not work. With Matcha, instantly publish from our
+                        library of 10,000+ professionally written articles and build your email list faster with our
+                        powerful conversion tool.</p>
+                    <form action="">
+                        <label for="email">Start publishing today</label><br>
+                        <input type="email" name="email" placeholder="Enter email">
+                        <button class="btn-email">Start my free trial</button>
+                    </form>
+                </article>
+            </section>
+            <section class="brands">
+                <article class="text">
+                    <h1>Growing ecommerce brands rely on Matcha</h1>
+                    <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no
+                        impact
+                        on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for
+                        quality
+                        content and consistent performance from their blogs.</p>
+                    <div>
+                        <button>Who uses matcha?</button>
+                        <img class="logos" src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png"
+                            alt="">
+                    </div>
+                </article>
+
+                <article class="section-2">
+
+                    <img class="face" src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                        alt="persona">
+                    <img class="log" src="https://cdn.pixabay.com/photo/2016/08/23/10/17/circle-1613999_960_720.png"
+                        alt="">
                     <section class="info">
-                    <h3>Everly</h3>
-                    <p>How Mambe Increased Conversions by 327%, Reduced CPL by 60%</p>
-                    <p>22% of monthly revenue influenced by content</p>
-                    <button>See Case Study</button>
+                        <h3>Everly</h3>
+                        <p>How Mambe Increased Conversions by 327%, Reduced CPL by 60%</p>
+                        <p>22% of monthly revenue influenced by content</p>
+                        <button>See Case Study</button>
                     </section>
 
+                </article>
             </section>
+
+
+        </div>
+        <section class="features">
+            <article class="feature-art">
+                <div>
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png" alt="icono-1">
+                    <h1>Fill your blog with engaging articles.</h1>
+                    <p>Publish to your blog in less time than it takes to drink your morning coffee.</p>
+                    <a href="#">Publish instantly &rArr;</a>
+                </div>
+                <div class="img-card">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png" alt="">
+                </div>
+
+            </article>
+            <article class="feature-art">
+                <div>
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_site_traffic.png" alt="icon-2">
+                    <h1>Attract and engage more website visitors.</h1>
+                    <p>Enhance your email, social media channels, and paid ads with content from Matcha.</p>
+                    <a href="#">Get more site traffic →</a>
+                </div>
+                <div class="img-card">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_site_traffic.png" alt="">
+                </div>
+            </article>
+            <article class="feature-art">
+                <div>
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_capture.png" alt="icon-3">
+                    <h1>Capture more emails with locked content.</h1>
+                    <p>Convert 10x more of your traffic into subscribers and nurture them to a sale.</p>
+                    <a href="#">Grow your email list faster →</a>
+                </div>
+                <div class="img-card">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_capture.png" alt="">
+                </div>
+            </article>
+            <article class="feature-art">
+                <div>
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png" alt="icon-4">
+                    <h1>Optimize your blog’s performance.</h1>
+                    <p>See what content delivers the most traffic, engagement, email subscribers, and sales.</p>
+                    <a href="#">See content’s ROI →</a>
+                </div>
+                <div class="img-card">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png" alt="">
+                </div>
+            </article>
         </section>
 
+        <section class="session-4">
+            <div class="main-cards">
+                <h1>How does Matcha work?</h1>
+                <p>Your blog can be so much more than a window dressing. Use Matchas's <a href="#">simple formula</a> to
+                    transform your blog into an ecommerce growth engine.</p>
+                <button type="submit">Explore the Platform</button>
+            </div>
+            <div class="cards-main">
+                <article class="cards">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="card-1">
+                    <div class="content-cards">
+                        <h3>Publish</h3>
+                        <p>Effortless fill your blog with content that shoppers want to read</p>
+                        <a href="#">Publish inistantly</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-promote.png" alt="card-2">
+                    <div class="content-cards">
+                        <h3>Promote</h3>
+                        <p>Use articles in email, social, and content ads to attract more site visitors.</p>
+                        <a href="#">Drive morer site visitors →</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="card-3">
+                    <div class="content-cards">
+                        <h3>Promote</h3>
+                        <p>Turn readers into email subscribers and subscribers into customers.</p>
+                        <a href="#">Grow your email list →</a>
+                    </div>
+                </article>
+                <article class="cards">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="card-4">
+                    <div class="content-cards">
+                        <h3>Measure</h3>
+                        <p>See what’s working and what’s not to easily optimize for more traffic, email subscribers, and
+                            sales.</p>
+                        <a href="#">Track performance →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    </div>
+    </main>
 </body>
 
 

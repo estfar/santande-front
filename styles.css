@@ -1,5 +1,6 @@
 h1{
-    color:#f7f5f3;
+    font-size:60px;
+    color:rgb(13, 46, 13);
     text-align: center;
 } 
 h2, h3, h4, h5, h6, p{
@@ -109,7 +110,7 @@ body{
         z-index: 1;
         
     }
-    body{
+    main{
         margin-top: 200px;
         text-align: center;
     }
@@ -125,12 +126,14 @@ body{
         border-radius:20px 20px 0 0; 
     }
     .brands > *{
-        margin: 80px 100px 0 50px;
+        margin: 80px 100px 60px 50px;
     }
     .section-2{
         background-color: #f7f5f3;
         border-radius:20px;
         position: relative;
+        margin-top: 150px ;
+        margin-bottom: 200px;
     }
     .info{
         padding: 20px;
@@ -151,15 +154,180 @@ body{
         flex-direction: column;
         align-items: left;
     }
-    .logos{
-        display: flex;
+    .text h1{
+        font-family: "Alegreya", serif;
+        font-size: 60px;
+        font-size: 51px;
+        line-height: 61px;
     }
-    .logos>*{
-        width: 50%;
-    }
+   .logos{
+       width: 100%;
+   }
     .log{
         position: absolute;
         right: 20px;
         top: 200px;
         width:80px;
+    }
+    .features {
+        display: grid;
+        /* grid-template-columns: repeat(2,300px); */
+        /* grid-template-columns: 500px 1fr; */
+        /* fr divide el espacio disponible */
+        grid-template:  340px 340px / 1fr 1fr;
+        margin:40px 100px;
+        background-color: teal;
+    }
+    /* .feature-art{ */
+        /* background-color: green; */
+        /* margin:10px; */
+        /* width:40%; */
+        /* height:330px; */
+    /* } */
+
+    .feature-art {
+        display: flex;
+        margin: 15px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .img-card{
+        width:150px;
+        height: 250px;
+        overflow:hidden;
+    }
+    .img-card > img{
+        height: 100%;
+        justify-content: left;
+    }
+    .session-4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-cards h1{
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 50px;
+    }
+    .main-cards p, button{
+        font-family:sans-serif;
+    }
+    .main-cards p{
+        margin-top: -30px;
+    }
+    .main-cards button{
+        background-color:rgb(2, 81, 87);
+        border:none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .cards-main{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow: hidden;
+        column-gap: 3%;
+        margin: 50px 150px;
+    }
+    .cards-main  img{
+        width: 90%;
+        height: 60%;
+    }
+    .cards{
+        border: 1px solid rgb(206, 206, 206);
+        border-radius: 5px;
+        /* row-gap: 5px; */
+        padding-bottom: 20px;
+        position:relative;
+    }
+    .content-cards{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .content-cards > p{
+        text-align: left;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-top: -20px;
+        padding-bottom: 50px;;
+    }
+    .content-cards > h3{
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 30px;
+    }
+    .content-cards > a{
+        position: absolute;
+        bottom:10px;
+        left: 30px;
+    }
+    .main-cards{
+        width: 50%;
+    }
+    /*Si una pagina no ofrece un mensaje en los primeros 3 seg, el usuario se va, buenas prácticas*/
+    
+    /**Dispositivos moviles en vist viewport*/
+    @media (max-width: 575px){
+        main, body{
+            background-color: rgb(252, 208, 128);
+            width: 100%;
+            text-align: center;
+        }
+        .navbar, .actions{
+            display:none;
+        }
+        .titulo{
+            font-size: 40px;
+        }
+        main{
+            margin-top:130px;
+        }
+        .banner{
+            width: 100%;
+        }
+        .fixed-header>*{
+            width: 1vw;
+        }
+        .formato form{
+            display: flex;
+            flex-direction: column;
+        } 
+        .promo{
+            flex-direction: column;
+
+        }
+        .section-brands{
+            width: 100%;
+        }
+        .brands{
+            flex-direction: column;
+        }
+        .features{
+            grid-template-columns: 1fr;
+            margin:0;
+        }
+        .feature-art{
+            margin:0;
+        }
+        .cards-main{
+            grid-template-columns: 1fr;
+        }
+    }
+    /*dispositivos pequeños en vista landscape (horizontal)*/
+    @media (min-width: 576px) and (max-width: 767px){
+        
+    }
+    /*dispositivos medianos tablets*/
+    @media (min-width: 768px) and (max-width: 991px){
+        
+    }
+    /** dispositivos grandes (desktops)**/
+    @media (min-width: 992px) and (max-width: 1199px){
+        
+    }
+    /** dispositivos extra grandes (monitores grandes, tvs) **/
+    @media (min-width: 1200px){
+        body{
+            background-color: rgb(252, 208, 128);
+        }
     }
