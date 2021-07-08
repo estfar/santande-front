@@ -6,7 +6,7 @@ const getTemplate = () => {
     return fetch("./template.html")
     .then((response) => response.text());
 }
-const sendEmailToApi = (adress, template) => {
+const sendEmailToApi = (address, template) => {
     fetch(`https://bedu-email-sender-api.herokuapp.com/send`, {
         method: "POST",
         headers: {
