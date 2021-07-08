@@ -1,0 +1,16 @@
+//el guión bajo es para darle privacidad, es decir que las variables de este archivo no se deben utilizar en ningun otro lugar que no sea este.
+
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+
+$font-title: "Alegreya", serif;
+
+%base-title{
+    font-family: $font-title;
+    color: $dark-green-title;
+}
+
+$category:#67b54b;
+$read-time: #8b8b8bcc;
+$card-title:#4a4a4a;

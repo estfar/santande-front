@@ -54,11 +54,11 @@ body{
   .logo{
       width: 15%;
   }
-  .navbar{
+  /* .navbar{
       width:70%;
       text-align: left;
       color: green;
-  }
+  } */
 
   .actions{
       width:15%;
@@ -111,7 +111,7 @@ body{
         
     }
     main{
-        margin-top: 200px;
+        /* margin-top: 200px; */
         text-align: center;
     }
     /*Postwork*/
@@ -191,6 +191,9 @@ body{
         background-color: white;
         border-radius: 5px;
     }
+    .feature-art h1{
+        font-size: 1em;
+    }
     .img-card{
         width:150px;
         height: 250px;
@@ -214,9 +217,7 @@ body{
     .main-cards p, button{
         font-family:sans-serif;
     }
-    .main-cards p{
-        margin-top: -30px;
-    }
+
     .main-cards button{
         background-color:rgb(2, 81, 87);
         border:none;
@@ -264,18 +265,24 @@ body{
     .main-cards{
         width: 50%;
     }
+    .blogging{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
     /*Si una pagina no ofrece un mensaje en los primeros 3 seg, el usuario se va, buenas prácticas*/
     
     /**Dispositivos moviles en vist viewport*/
     @media (max-width: 575px){
         main, body{
-            background-color: rgb(252, 208, 128);
+            /* background-color: rgb(252, 208, 128); */
             width: 100%;
             text-align: center;
         }
-        .navbar, .actions{
+        /* .navbar, .actions{
             display:none;
-        }
+        } */
         .titulo{
             font-size: 40px;
         }
@@ -307,7 +314,7 @@ body{
             margin:0;
         }
         .feature-art{
-            margin:0;
+            margin:10px;;
         }
         .cards-main{
             grid-template-columns: 1fr;
@@ -327,7 +334,7 @@ body{
     }
     /** dispositivos extra grandes (monitores grandes, tvs) **/
     @media (min-width: 1200px){
-        body{
+        /* body{
             background-color: rgb(252, 208, 128);
-        }
+        } */
     }
