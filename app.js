@@ -4,14 +4,44 @@ const forms = document.querySelectorAll(".singup-form")
 
 const getTemplate = () => {
     return fetch("./template.html")
-    .then((response) => response.text())
+    .then((response) => response.text());
 }
-const sendEmail = (miVariable) => {
-    miVariable.preventDefault();
-    const email = miVariable.target.querySelector("input").value;
+const sendEmailToApi = (adress, template) => {
+    fetch(`https://bedu-email-sender-api.herokuapp.com/send`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            address: address,
+            template: template,
+        }),
+    })
+    .then((results) => {
+        console.log(results.status)
+        if(results.status== 200){
+            alert("Email send!!");
+        }else{
+            alert("Send failed");
+        }
+        //console.log(results);
+        document.getElementById("email").value= ""
+        // alert("E-mail send!!");
+    })
+    .catch((error)=> {
+        console.error(error);
+        document.getElementById("email").value= "";
+        alert("Send failed");
+    });
+};
+
+const sendEmail = (event) => {
+    event.preventDefault();
+    const email = event.target.querySelector("input").value;
     getTemplate()
-        .then((response)=>{
-            console.log(response);
+        .then((template)=>{
+            sendEmailToApi(email, template)
+            //console.log(response);
         })
         .catch((error) => {
             console.log(error, "error al obtener el template")
